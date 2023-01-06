@@ -1,0 +1,17 @@
+feytd{
+    font: optional;
+}
+.myDIV {
+   
+    color: red;
+    
+    animation: mymove 5s infinite;
+    
+  }
+  
+  @keyframes mymove {
+    50% {color: blue;
+    text-shadow: 10px 20px 30px blue;
+    }
+  }
+  
