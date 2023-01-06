@@ -155,9 +155,10 @@
     <externalSharingModel>Private</externalSharingModel>
     <label>Order</label>
     <nameField>
+        <displayFormat>SWON-{00000}</displayFormat>
         <label>Order Number</label>
         <trackHistory>false</trackHistory>
-        <type>Text</type>
+        <type>AutoNumber</type>
     </nameField>
     <pluralLabel>Orders</pluralLabel>
     <searchLayouts></searchLayouts>

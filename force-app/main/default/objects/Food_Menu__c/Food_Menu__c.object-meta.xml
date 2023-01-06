@@ -153,14 +153,13 @@
     <enableSharing>false</enableSharing>
     <enableStreamingApi>false</enableStreamingApi>
     <externalSharingModel>ControlledByParent</externalSharingModel>
-    <label>Order Item</label>
+    <label>Food Menu</label>
     <nameField>
-        <displayFormat>SWOIN-{00000}</displayFormat>
-        <label>Order Item Number</label>
+        <label>Food Menu Name</label>
         <trackHistory>false</trackHistory>
-        <type>AutoNumber</type>
+        <type>Text</type>
     </nameField>
-    <pluralLabel>Order Items</pluralLabel>
+    <pluralLabel>Food Menus</pluralLabel>
     <searchLayouts></searchLayouts>
     <sharingModel>ControlledByParent</sharingModel>
     <visibility>Public</visibility>

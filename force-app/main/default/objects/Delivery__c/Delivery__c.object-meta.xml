@@ -152,16 +152,16 @@
     <enableSearch>true</enableSearch>
     <enableSharing>false</enableSharing>
     <enableStreamingApi>false</enableStreamingApi>
-    <externalSharingModel>ControlledByParent</externalSharingModel>
-    <label>Order Item</label>
+    <externalSharingModel>Private</externalSharingModel>
+    <label>Delivery</label>
     <nameField>
-        <displayFormat>SWOIN-{00000}</displayFormat>
-        <label>Order Item Number</label>
+        <displayFormat>SWDN-{00000}</displayFormat>
+        <label>Delivery Number</label>
         <trackHistory>false</trackHistory>
         <type>AutoNumber</type>
     </nameField>
-    <pluralLabel>Order Items</pluralLabel>
+    <pluralLabel>Deliveries</pluralLabel>
     <searchLayouts></searchLayouts>
-    <sharingModel>ControlledByParent</sharingModel>
+    <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>
 </CustomObject>

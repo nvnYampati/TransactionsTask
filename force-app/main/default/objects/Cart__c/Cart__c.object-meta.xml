@@ -153,14 +153,14 @@
     <enableSharing>false</enableSharing>
     <enableStreamingApi>false</enableStreamingApi>
     <externalSharingModel>ControlledByParent</externalSharingModel>
-    <label>Order Item</label>
+    <label>Cart</label>
     <nameField>
-        <displayFormat>SWOIN-{00000}</displayFormat>
-        <label>Order Item Number</label>
+        <displayFormat>SWCN-{00000}</displayFormat>
+        <label>Cart Number</label>
         <trackHistory>false</trackHistory>
         <type>AutoNumber</type>
     </nameField>
-    <pluralLabel>Order Items</pluralLabel>
+    <pluralLabel>Carts</pluralLabel>
     <searchLayouts></searchLayouts>
     <sharingModel>ControlledByParent</sharingModel>
     <visibility>Public</visibility>
