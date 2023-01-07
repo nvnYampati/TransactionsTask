@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Culinary_Skills__c</fullName>
+    <externalId>false</externalId>
+    <label>Culinary Skills</label>
+    <required>true</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Arabic Cuisine</fullName>
+                <default>false</default>
+                <label>Arabic Cuisine</label>
+            </value>
+            <value>
+                <fullName>Chinese Cuisine</fullName>
+                <default>false</default>
+                <label>Chinese Cuisine</label>
+            </value>
+            <value>
+                <fullName>North Indian Cuisine</fullName>
+                <default>false</default>
+                <label>North Indian Cuisine</label>
+            </value>
+            <value>
+                <fullName>Oriental Cuisine</fullName>
+                <default>false</default>
+                <label>Oriental Cuisine</label>
+            </value>
+            <value>
+                <fullName>Italian Cuisine</fullName>
+                <default>false</default>
+                <label>Italian Cuisine</label>
+            </value>
+            <value>
+                <fullName>South Indian Cuisine</fullName>
+                <default>false</default>
+                <label>South Indian Cuisine</label>
+            </value>
+            <value>
+                <fullName>Fast Food</fullName>
+                <default>false</default>
+                <label>Fast Food</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>
