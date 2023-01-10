@@ -8,6 +8,9 @@
                  title="Search this is title!" type = "search"
                  value={searchKey}
                  ></lightning-input>   
+                 
+                <lightning-button variant="brand" label={label} title={label} onclick={navigateNext}></lightning-button>
+                 
             </div>
         </div>
         <!-- <div class="slds-align_absolute-center slds-text-heading_large" id ="myDIV"> Search Title</div> -->
@@ -21,7 +24,7 @@
         <div>
             <lightning-datatable
             columns={tableCol}
-            data={tableData}
+            data={tableData.data}
             key-field="id"
             onrowaction={itemAction}
             >

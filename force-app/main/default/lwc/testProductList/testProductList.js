@@ -2,17 +2,19 @@ import { LightningElement, wire, api } from 'lwc';
 import getChef from '@salesforce/apex/ChefController.getChef';
 import Chef from '@salesforce/schema/Chef__c'
 import ChefName from '@salesforce/schema/Chef__c.Name'
-export default class TestProductList extends LightningElement {
+import { NavigationMixin } from 'lightning/navigation';
+
+export default class TestProductList extends NavigationMixin(LightningElement){
     searchKey;
    tableCol=[
         {label:'Chef', fieldName : ChefName.fieldAPIName ,type:'Text'},
         {label:'Chef', fieldName : ChefName ,type:'Text'},
         {label:'Menu', fieldName : ChefName ,type:'Text'}
     ];
-    tableData;
+    //tableData;
     itemAction;
-    prop
-
+    prop;
+    
     // @wire(getChef,{}).then(
     //     result=>{
     //         this.tableData = result
@@ -23,17 +25,13 @@ export default class TestProductList extends LightningElement {
     //     }
     // );
    // @wire(getChef)tableData;
-   //@wire(getChef,{name:'$searchKey'})tableData;
+   @wire(getChef,{name:'$searchKey'})tableData;
  
     tableData = this.Chefs;
     searchChef(event){
-       
-        
         this.searchKey = event.target.value;
         this.prop = this.searchKey;
         //@wire(getChef,{name:'$searchKey'})this.tableData;
     }
 
-    
-   
 }

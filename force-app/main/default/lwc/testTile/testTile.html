@@ -1,0 +1,35 @@
+<template>
+    <div class="slds-card slds-var-p-around_small">
+       
+        <template if:true={testObj.data}>
+            
+        </template>
+ <div> {uppercasedFullName}
+       
+        <template for:each={testObj.data} 
+         for:item="testObj" >
+        <img
+            src={imageURL}
+            class="slds-align_absolute-center"   
+            key={testObj.Id}
+        ></img>
+        </template>
+    <br/>
+    
+        <lightning-input
+                label="First Name"
+                value={firstName}
+        ></lightning-input>
+      
+        <lightning-input
+             label="Last Name"
+             value={lastName}
+        ></lightning-input>
+    <br/>
+        <lightning-button
+            label={buttonProp}
+            onclick={onClickHandler}
+        ></lightning-button>
+       </div>
+    </div>
+</template>
