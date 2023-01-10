@@ -17,7 +17,7 @@ export default class ModalLWC extends LightningElement {
     }
 
     async openAccountModal() {
-        const result = await AccModal.open({
+        const result =  await AccModal.open({
             size: 'large',
             description: 'Accessible description of modal\'s purpose',
             content: 'Passed into content api',

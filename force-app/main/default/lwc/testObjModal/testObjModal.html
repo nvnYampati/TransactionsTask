@@ -1,0 +1,15 @@
+<template>
+    <div class="slds-card">
+        <template if:true={AllRecords.data}>
+            <template for:each={AllRecords.data} for:item="testObj">
+                <div class="slds-card"
+                key={testObj.id}
+                >
+
+                <a onclick={handleOnClick}>Id {testObj.Id}</a><br/>
+                <p> name {testObj.Name} </p>
+            </div>
+            </template>
+        </template>
+    </div>
+</template>
