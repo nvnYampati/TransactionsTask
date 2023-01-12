@@ -1,0 +1,23 @@
+<template>
+    <div class="slds-card">
+        <template if:true={AllRecords.data}>
+            <template for:each={AllRecords.data} for:item="testObj">
+                <div class="slds-card"
+                key={testObj.id}
+                >
+                <!-- <c-demo-nav-item
+                recordid = {testObj}  
+                >
+                </c-demo-nav-item> -->
+                <c-try-this-item
+                recordid = {testObj} 
+                >
+                </c-try-this-item>
+                <!-- onclick={handleOnClick} -->
+                <!-- <a onclick={handleOnClick}>Id {testObj.Id}</a><br/>
+                <p> name {testObj.Name} </p>        // baby steps-->
+            </div>
+            </template>
+        </template>
+    </div>
+</template>

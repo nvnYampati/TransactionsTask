@@ -1,21 +1,20 @@
 <template>
     <div class="slds-card slds-var-p-around_small">
        
-        <template if:true={testObj.data}>
-            
-        </template>
- <div> {uppercasedFullName}
-       
-        <template for:each={testObj.data} 
-         for:item="testObj" >
+     <template if:true={AllRecords.data}>
+
+        <template for:each={AllRecords.data} 
+         for:item="ChildObj" >
         <img
-            src={imageURL}
+            src={ChildObj.Picture_url}
             class="slds-align_absolute-center"   
-            key={testObj.Id}
+            key={ChildObj.Id}
         ></img>
+        <p key={ChildObj.Id}> {ChildObj.Name} </p>
         </template>
+    </template>
     <br/>
-    
+    <div> {uppercasedFullName}
         <lightning-input
                 label="First Name"
                 value={firstName}
