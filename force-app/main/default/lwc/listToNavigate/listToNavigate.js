@@ -3,9 +3,9 @@ import { LightningElement, wire, api } from 'lwc';
 import getTestRecs from '@salesforce/apex/TestObjController.allRecords';
 //import  component
 export default class ListToNavigate extends LightningElement {
+   
     @wire(getTestRecs) AllRecords;
     //@wire(getTestRecs) alRecs().then(result).catch();
-    RecordId;
     TestRecord;
     // handleOnClick(event){
     //     //dispatch product or testobj?
@@ -18,17 +18,5 @@ export default class ListToNavigate extends LightningElement {
     //    @api set objid(value){
     //         this.RecordId = value;
     //     }
-
-
-    // handleOnClick(){             //when clicked, this function opens the record page
-    //     this[NavigationMixin.Navigate]({
-    //         type: 'standard__recordPage',
-    //         attributes: {
-    //             recordId: 'a03B0000002tEurIAE',
-    //             objectApiName: 'TestObj__c', // objectApiName is optional
-    //             actionName: 'view'
-    //         }
-    //     });
-    // }
 
 }
