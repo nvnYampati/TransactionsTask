@@ -1,0 +1,19 @@
+<template> 
+    <div class="slds-card">  Base List to Record Navigation Component 
+        <template if:true={AllRecords.data}>
+            <template for:each={AllRecords.data} for:item="testObj">
+                <div class="slds-card"
+                key={testObj.id}
+                >
+                    <c-base-nav-item
+                    test-record = {testObj} 
+                    >
+
+                    </c-base-nav-item>
+                
+                </div>
+            </template>
+           
+        </template>
+    </div>
+</template>
