@@ -1,4 +1,4 @@
-<template>
+<template> 
     <div class="slds-card">
         <template if:true={AllRecords.data}>
             <template for:each={AllRecords.data} for:item="testObj">
@@ -9,16 +9,26 @@
                 recordid = {testObj}  
                 >
                 </c-demo-nav-item> -->
+                
+                <!-- <c-try-this-item
+                test-record = {testObj} 
+                onrecordselect = {handleSelected} 
+                > -->
                 <c-try-this-item
-                test-record= {testObj} 
-                test-record-id={testObj.id}
+                test-record = {testObj} 
                 >
+
                 </c-try-this-item>
+                <!-- test-record-id={testObj.id}        add this to give id to child -->
                 <!-- onclick={handleOnClick} -->
                 <!-- <a onclick={handleOnClick}>Id {testObj.Id}</a><br/>
                 <p> name {testObj.Name} </p>        // baby steps-->
+                
             </div>
             </template>
+            <!-- <div>
+                <p> {selectedRecord.Id} of {selectedRecord.Name} </p>
+            </div> -->
         </template>
     </div>
 </template>
