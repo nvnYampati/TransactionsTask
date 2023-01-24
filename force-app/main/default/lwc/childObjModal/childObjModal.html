@@ -1,0 +1,26 @@
+<template>
+    <lightning-modal-header label="Child Object Modal">
+        Tagline content with <a href="https://salesforce.com">Salesforce.com data</a>
+    </lightning-modal-header>
+    <lightning-modal-body>
+        <!-- modal content specified in LightningModal componentCHild  -->
+       <!-- alternatively, add content here directly -->
+       <div class="slds-grid slds-gutters">
+        <div class="slds-col slds-size_2-of-3">
+          <span>
+            <img src = {picUrl} height="378px" width="442px"/> <br/>
+          </span>
+        </div>
+        <div class="slds-col slds-size_1-of-3 slds-float_left">
+          <span>
+            <p>Name in P tag {name}</p>     <br/>
+            <p>Pic Url in P tag {picUrl}</p>
+          </span>
+        </div>
+      </div>
+    </lightning-modal-body>
+    <lightning-modal-footer>
+        Footer Content <br/>
+        <lightning-button label="OK" onclick={handleOkay}></lightning-button>
+    </lightning-modal-footer>
+</template>

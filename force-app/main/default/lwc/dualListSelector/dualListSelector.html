@@ -1,0 +1,20 @@
+<template>
+    <article class="slds-card" if:true={parentRecordList.data}>
+        <div class="slds-card__header slds-grid"> Parent List
+            <template for:each={parentRecordList.data} for:item="parentRecord">
+                <div  class="slds-card__body slds-card__body_inner" key={parentRecord.id}>
+                    <c-parent-list-item parent-record={parentRecord} onparentselect={handleParentSelect}>
+                    </c-parent-list-item>                    
+                </div>
+            </template>
+        </div>
+        <div class="slds-card"> Related Child List
+            <template for:each={childRecordList.data} for:item="childRecord">
+                <div key={childRecord.id}>
+                    <c-child-list-item child-record={childRecord}> 
+                    </c-child-list-item>
+                </div>
+            </template>
+        </div>
+    </article>
+</template>

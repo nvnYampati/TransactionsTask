@@ -1,5 +1,5 @@
 import { LightningElement, wire, api } from 'lwc';
-import {NavigationMixin} from 'lightning/navigation';
+//import {NavigationMixin} from 'lightning/navigation';
 import getTestRecs from '@salesforce/apex/TestObjController.allRecords';
 export default class TestObjModal extends LightningElement {
     @wire(getTestRecs) AllRecords;

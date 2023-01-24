@@ -1,0 +1,14 @@
+<template>
+    <article class="slds-card">
+        <div class="slds-einstein-header">
+            <h2 class="slds-card__header-title">Open to See a Child Record</h2>
+        </div>
+        <div class="slds-card__body">
+            <c-modal-list-item
+            for:each={allChildRecords.data} for:item="childRecord" 
+            key={childRecord.Id} test-record={childRecord}
+            >
+            </c-modal-list-item>
+        </div>
+    </article>
+</template>
