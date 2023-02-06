@@ -1,13 +1,13 @@
 import { LightningElement, wire, track } from 'lwc';
 //import getParentRecords from '@salesforce/apex/DualListController.parentList';
-import getChildRecords from '@salesforce/apex/DualListController.childList';
-import getParentRecords from '@salesforce/apex/TestObjController.allRecords';
+import getChildRecords from '@salesforce/apex/DualListController.relatedChildList';
+import getParentRecords from '@salesforce/apex/DualListController.parentList';
 export default class DualListSelector extends LightningElement {
     //ParentRecordList;
     @wire(getParentRecords) parentRecordList;
     childRecordList = [];
    
-    @track updatedChildList;
+    @track updatedChildList=[];
     
     handleParentSelect(event){
         const parentRecId = event.detail.value;

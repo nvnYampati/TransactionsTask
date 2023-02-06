@@ -1,0 +1,9 @@
+<template>
+    <div class = "slds-card slds-var-p-around_x-small" >
+        <template if:true={parentRecord}>
+            <div>
+                <a onclick={handleOnCLick}><p>Name of Record in parent-list {parentRecord.Name}</p></a> 
+            </div>
+        </template>
+    </div>
+</template>
